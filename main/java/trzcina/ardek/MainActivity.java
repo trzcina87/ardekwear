@@ -163,6 +163,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        Log.e("API", "koniec");
         watek.zakoncz = true;
         watek.interrupt();
         while(watek.isAlive()) {
